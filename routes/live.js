@@ -40,7 +40,7 @@ module.exports = function(app) {
                         }
                     ],
                     order: [['when', 'ASC']],
-                    limit: 3
+                    limit: 50
                 }).then(function(nextMatches) {
                     res.render('live', {matches, nextMatches, loggedIn: !!req.user});
                 });
